@@ -1,0 +1,25 @@
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  background-image: url("../assets/images/cta-bg.webp");
+  background-size: cover;
+  background-position: center;
+}
+.cta-section a {
+  width: 650px;
+}
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 560px) {
+  .cta-section {
+    padding: 0 20px;
+    height: 200px;
+  }
+  .cta-section a {
+    width: 100%;
+  }
+}

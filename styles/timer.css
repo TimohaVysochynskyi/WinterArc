@@ -1,0 +1,129 @@
+.timer-section {
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+  padding: 8px 0;
+}
+
+.timer__title {
+  font-size: 54px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  text-align: center;
+  white-space: nowrap;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5.12px;
+  text-transform: uppercase;
+}
+
+.timer__value {
+  flex-shrink: 0;
+  font-family: "Frula";
+  width: 200px;
+  text-align: center;
+}
+.timer__value:first-child {
+  width: 250px;
+  text-align: right;
+}
+
+.timer__separator {
+  flex-shrink: 0;
+  font-family: "Frula";
+  text-align: center;
+  width: 100px;
+}
+
+.timer__labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.timer__label {
+  display: -webkit-box;
+  width: 200px;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  flex-shrink: 0;
+  overflow: hidden;
+  color: var(--white-color);
+  text-align: center;
+  text-overflow: ellipsis;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.timer__label:first-child {
+  width: 250px;
+}
+
+.timer__description {
+  max-width: 895px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white-color);
+}
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 560px) {
+  .timer-section {
+    padding: 40px 20px;
+    padding-top: 80px;
+    height: auto;
+    gap: 64px;
+  }
+  .timer__title {
+    font-size: 20px;
+  }
+  .timer {
+    font-size: 32px;
+  }
+  .timer__value,
+  .timer__label {
+    width: 60px;
+  }
+  .timer__value:first-child,
+  .timer__label:first-child {
+    width: 80px;
+    text-align: center;
+  }
+  .timer__label {
+    font-size: 12px;
+  }
+  .timer__labels {
+    gap: 20px;
+  }
+  .timer__separator {
+    width: 20px;
+  }
+  .timer__description {
+    font-size: 12px;
+  }
+}

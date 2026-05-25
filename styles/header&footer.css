@@ -1,0 +1,132 @@
+.header {
+  padding: 0 64px;
+  border-bottom: 2px solid var(--white-color);
+  width: 100%;
+  height: 56px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-wrapper {
+  padding-right: 60px;
+  height: 100%;
+  border-right: 2px solid var(--white-color);
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  height: 100%;
+}
+.header-nav__list {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+}
+.header-nav__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-nav__item:first-child {
+  padding: 0 60px;
+  border-left: 2px solid var(--white-color);
+}
+.header-nav__item:nth-child(2) {
+  padding: 0 60px;
+  border-left: 2px solid var(--white-color);
+  border-right: 2px solid var(--white-color);
+}
+.header-nav__item:last-child {
+  padding-left: 60px;
+}
+.nav__link {
+  font-family: "UpheavalPro", monospace;
+  color: var(--white-color);
+  font-size: 24px;
+  letter-spacing: -1%;
+  text-decoration: none;
+}
+.header-nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/***** Footer *****/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding: 60px 64px;
+  border-top: 2px solid var(--white-color);
+  width: 100%;
+}
+.footer-nav__list {
+  display: flex;
+  width: 264px;
+  align-items: center;
+  gap: 40px;
+  list-style-type: none;
+}
+.footer__copyright {
+  color: var(--white-color);
+  text-transform: uppercase;
+  width: 264px;
+}
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 560px) {
+  .header {
+    padding: 0 20px;
+    position: fixed;
+    z-index: 6;
+    background-color: var(--black-color);
+  }
+  .header__logo-wrapper {
+    border-right: none;
+  }
+  .header-nav {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    background-color: var(--black-color);
+  }
+  .header-nav__list {
+    flex-direction: column;
+    height: auto;
+  }
+  .header-nav-button {
+    display: block;
+  }
+  .header-nav__item {
+    border: none !important;
+    border-bottom: 2px solid var(--white-color) !important;
+    padding: 0 20px !important;
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer__logo-wrapper {
+    order: 0;
+  }
+  .footer-nav {
+    order: 1;
+  }
+  .footer__copyright {
+    order: 2;
+    font-size: 12px;
+    text-align: center;
+  }
+}
