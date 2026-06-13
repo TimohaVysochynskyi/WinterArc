@@ -60,6 +60,8 @@
   letter-spacing: 2%;
   text-transform: uppercase;
   font-weight: 700;
+  position: relative;
+  z-index: 1;
 }
 .hero-content__quote:first-child {
   width: 260px;
@@ -69,14 +71,39 @@
 }
 .hero__image {
   position: absolute;
-  bottom: 62px;
+  bottom: 70px;
   right: 0;
   height: 70%;
   width: auto;
   z-index: 0;
+  object-fit: contain;
+  object-position: bottom;
 }
 
 /***** RESPONSIVE *****/
+
+@media screen and (max-width: 1460px) {
+  .hero__title-wrapper {
+    padding: 40px 64px;
+  }
+  .hero__title {
+    font-size: 156px;
+  }
+  .hero__image {
+    height: 65%;
+    max-width: 60%;
+    
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__title-wrapper {
+    padding: 40px 40px;
+  }
+  .hero__title {
+    font-size: 120px;
+  }
+}
 
 @media screen and (max-width: 560px) {
   .hero-content {

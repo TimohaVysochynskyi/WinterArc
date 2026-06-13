@@ -30,6 +30,8 @@ body {
   display: block;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 
   display: flex;
   align-items: center;

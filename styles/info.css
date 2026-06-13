@@ -101,9 +101,25 @@
 
 /***** RESPONSIVE *****/
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1024px) {
+  .info-content {
+    padding: 0 40px;
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .info-content {
+    padding: 0 40px;
+    gap: 40px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .info-section {
     padding-bottom: 40px;
+    gap: 20px;
   }
   .info-content {
     flex-direction: column;
@@ -114,17 +130,23 @@
     text-align: center;
   }
   .info__item {
-    padding: 40px 5px 10px 5px;
     height: auto;
+    padding: 40px 10px 20px 10px;
+  }
+  .info__text-wrapper {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .info__item {
+    padding: 40px 5px 10px 5px;
   }
   .info__item-title {
     font-size: 14px;
   }
   .info__item-icon {
     width: 32px;
-  }
-  .info__text-wrapper {
-    height: auto;
-    width: 100%;
   }
 }

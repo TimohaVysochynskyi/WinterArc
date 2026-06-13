@@ -79,7 +79,7 @@
 
 /***** RESPONSIVE *****/
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 900px) {
   .header {
     padding: 0 20px;
     position: fixed;
@@ -114,6 +114,12 @@
     justify-content: flex-end;
   }
 
+  .footer {
+    padding: 60px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
     gap: 32px;
